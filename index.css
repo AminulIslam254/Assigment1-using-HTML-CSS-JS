@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+#box2{
+    
+}
+
+.myInput1:hover {
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-image: linear-gradient(90deg, #e11359, #FF5722);
+    background-clip: text;
+    cursor: pointer;
+}
+
+@media screen and (max-width:350px) {
+    .container {
+        /* justify-content: center; */
+        background-color: #e11359;
+    }
+}
+

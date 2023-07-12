@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+    <style>
+        @media (max-width:671px) {
+            .container1{
+                width: 400px !important;
+                
+            }
+            .container2{
+                width: 300px !important;
+            }
+            .box1{
+                height: fit-content !important;
+                width: 75%;
+            }
+            
+        }
+        @media (max-width:250px) {
+            .container3{
+                height: fit-content !important;
+            }
+            #box2{
+                height: fit-content !important;
+                background-color:#38385b !important;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div
+        class="box1" id="box1" style="height: 620px; width: 100%; display: flex; justify-content: center;align-items: center;background-color:#38385b;">
+
+        <div class="box1" 
+            style="height: 450px; width: 50%; border-radius: 10px; flex-wrap: wrap-reverse;display: flex;flex-direction: row; background-color: white; justify-content: center; align-items: center;">
+            <div style="height: 90%; width:90% ; display: flex; flex-direction: row;flex-wrap: wrap-reverse;">
+                <div class="container1"
+                    style="height: 100%; width: 70%;display: flex;flex-direction: column;align-items: center;justify-content: space-evenly;">
+                    <div>
+                        <h1 style="margin-bottom: 0px;">Stay updated!</h1>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <p style="width: 82%;">Join 60,000+ product managers receiving monthly updates on:</p
+                            style="width: 90%;">
+                    </div>
+                    <div style="height: 25%; display: flex; flex-direction: column;justify-content: space-between;">
+                        <div style="width: 100%;display: flex; justify-content: flex-start;"> <img
+                                src="./newsletter-main/assets/images/icon-list.svg" alt="">Product discovery and
+                            building
+                            what matters</div>
+                        <div style="width: 100%;display: flex; justify-content: flex-start;"> <img
+                                src="./newsletter-main/assets/images/icon-list.svg" alt="">Measuring to ensure updates
+                            are a success</div>
+                        <div style="width: 100%;display: flex; justify-content: flex-start;"> <img
+                                src="./newsletter-main/assets/images/icon-list.svg" alt="">And much more!</div>
+                    </div>
+                    <div
+                        style="height: 35%;width: 80%;display: flex; justify-content: flex-start;flex-direction: column;justify-content: space-evenly;">
+                        <p style="margin: 0px;font-weight: bold;">Email Address</p>
+                        <span id="errorMessage" style="font-size: 12px; color:red"></span>
+                        <input id="myInput1" placeholder="email@company.com"
+                            style="height: 30%; width: 80%;  border:1px solid rgb(0, 0, 0);border-radius: 5px;"
+                            type="text" name="email">
+                        <button class="button1"
+                            style="height: 30%; width: 82%;background-color: #38385b;color: white; border-radius: 5px;"
+                            onclick="handleSubmit()">Subscribe to Monthly news letter</button>
+                    </div>
+
+                </div>
+                <div class="container2" style="height: 100%; width: 30%; display: flex; justify-content: center;">
+                    <img src="./newsletter-main/assets/images/illustration-sign-up-desktop.svg"
+                        style="height: 100%;width: 100% ;object-fit: cover;" alt="">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="box2"
+        style="height: 620px; width: 100%; display: none; justify-content: center;align-items: center;background-color:#38385b;">
+        <div class="container3"
+            style="display: flex;flex-direction: column;background-color: white;width: 400px;height: 70%; border-radius: 5px;justify-content: center; align-items: center;">
+            <div style="width: 65%;height: 80%;">
+                <div>
+                    <img src="./newsletter-main/assets/images/icon-success.svg" alt="">
+                </div>
+                <div style="display: flex;flex-wrap: wrap;">
+                    <h1>Thanks for Subscribing!</h1>
+                </div>
+                <div>
+                    <p style="font-size: 12px;">A confirmation email has been sent to <span id="showEmail"
+                            style="font-weight: bold;">ash@loremcompany.com</span>.
+                        Please open it and click the button inside to confirm your subscription.</p>
+                </div>
+                <div style="height: 30%;">
+                    <button
+                        style="height: 40%; width: 100%;background-color: #38385b;color: white; border-radius: 5px;">Dismiss
+                        Message</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="index.js">
+
+</script>
+
+</html>
