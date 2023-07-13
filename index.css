@@ -9,8 +9,9 @@
     
 }
 
-.myInput1:hover {
+#myInput1:hover {
     cursor: pointer;
+    border: 1px solid black !important;
 }
 
 .button1:hover {
