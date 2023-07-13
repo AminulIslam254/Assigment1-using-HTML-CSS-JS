@@ -18,7 +18,7 @@ const handleSubmit = () => {
         document.getElementById("errorMessage").innerHTML = "Field Should not be Empty";
     }
     else if (!val1) {
-        document.getElementById("errorMessage").innerHTML = "Please Enter valid email format";
+        document.getElementById("errorMessage").innerHTML = "Valid email required";
     }
     else {
         // localStorage.setItem("myEmail",myEmail)
